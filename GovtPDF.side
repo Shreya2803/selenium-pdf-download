@@ -1,0 +1,123 @@
+{
+  "id": "9944c0e4-231e-4aad-bfab-6063ac686580",
+  "version": "2.0",
+  "name": "Govt PDF",
+  "url": "https://legislative.gov.in/",
+  "tests": [{
+    "id": "dc608a03-c18d-4ab0-81b4-f9839fb28a82",
+    "name": "Test 1",
+    "commands": [{
+      "id": "ad2bff0b-e994-45a1-9cde-88c03b2d7372",
+      "comment": "",
+      "command": "open",
+      "target": "https://legislative.gov.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747b25c8-61d8-4d8d-9f27-a6341e84bca2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cbd6d35-d879-42a9-acc4-94508eee643c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Documents",
+      "targets": [
+        ["linkText=Documents", "linkText"],
+        ["css=#menu-item-174 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Documents')])[2]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-174']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://legislative.gov.in/documents/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e18c5fd-3014-44a1-b43c-ceb0e5aa0f59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Documents",
+      "targets": [
+        ["linkText=Documents", "linkText"],
+        ["css=#menu-item-174 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Documents')])[2]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-174']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://legislative.gov.in/documents/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62dc2867-25ae-42a4-bb2e-bf621247e88b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Documents",
+      "targets": [
+        ["linkText=Documents", "linkText"],
+        ["css=#menu-item-174 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Documents')])[2]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-174']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://legislative.gov.in/documents/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f82904b-9c65-4721-8f9b-63d32175f4fb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "290cab88-40a2-4cbd-8c86-cad820c5a7ac",
+      "comment": "",
+      "command": "while",
+      "target": "${a} <= 10",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "523e3ec3-ff41-4008-abae-8340061b50a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(${a}) .fa",
+      "targets": [
+        ["css=tr:nth-child(3) .fa", "css:finder"],
+        ["xpath=//div[@id='row-content']/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[3]/span/div/span/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/span/div/span/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89cfb74d-fb74-413a-bce7-af30797665e0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${a}+1",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "1e55054c-054d-4526-ab51-8ba7316e66ca",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c81510b2-5b31-4777-a78c-600caef23a57",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9224e9fe-ff6a-4f7e-a5e0-f756cc429ddb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://legislative.gov.in/"],
+  "plugins": []
+}
